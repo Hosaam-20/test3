@@ -8,6 +8,11 @@ public class Controller {
 
     @GetMapping(path = "/greet")
     public String greet(){
-        return "Hello, World...!";
+        return "Hello, World...! this webhook test1 ";
+    }
+
+        @GetMapping(path = "/greet2")
+    public String greet2(){
+        return "Hello, World2...! this webhook test2 ";
     }
 }
