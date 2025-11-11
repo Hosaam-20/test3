@@ -7,12 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @GetMapping(path = "/greet")
-    public String greet(){
+    public String greet1(){
         return "Hello, World...! this webhook test1 ";
     }
 
         @GetMapping(path = "/greet2")
     public String greet2(){
         return "Hello, World2...! this webhook test2 ";
+    }
+
+
+            @GetMapping(path = "/greet3")
+    public String greet3(){
+        return "Hello, World2...! this webhook test3 ";
     }
 }
